@@ -1,88 +1,83 @@
-🌱 Smart Greenhouse System (IoT)
+# Smart Greenhouse IoT System
 
-📌 Overview
-The Smart Greenhouse System is an IoT-based project designed to automate and optimize plant growth conditions. It uses sensors and a microcontroller to monitor environmental factors like temperature, humidity, and soil moisture, and automatically controls devices such as a fan and water pump.
-This system reduces manual effort, improves efficiency, and ensures plants grow in optimal conditions through real-time monitoring and automation.
+## Overview
+The Smart Greenhouse System is an IoT-based automation project designed using ESP32. It monitors environmental conditions such as temperature, humidity, and soil moisture, and automatically controls devices like a fan and water pump to maintain optimal plant growth conditions.
 
-🚀 Features
-🌡️ Temperature Monitoring using DHT22 sensor
-💧 Soil Moisture Detection for automated irrigation
-💨 Automatic Fan Control based on temperature
-🚿 Water Pump Automation for plant watering
-📟 LCD Display for real-time data visualization
-🌐 IoT Integration (MQTT + Node-RED) for remote monitoring
-⚠️ Alerts & Notifications for abnormal conditions
+The system also supports MQTT-based communication and a Node-RED dashboard for real-time monitoring and control.
 
-🛠️ Hardware Components
-ESP32 Microcontroller
-DHT22 Temperature & Humidity Sensor
-Soil Moisture Sensor
-Relay Module
-Water Pump
-Motor Fan
-LCD Display (I2C)
-Breadboard & Jumper Wires
-Resistors
-3.7V Battery
-Potentiometer
+---
 
-💻 Software & Technologies
-MicroPython (ESP32 programming)
-Thonny IDE
-MQTT Protocol
-Node-RED Dashboard
-Serial Monitor (Debugging)
+## Features
+- Real-time temperature and humidity monitoring using DHT22
+- Soil moisture-based automated irrigation system
+- Automatic fan control based on temperature threshold
+- Water pump automation for irrigation
+- LCD display for real-time sensor data
+- MQTT-based cloud communication
+- Node-RED dashboard for remote monitoring
+- Alert system for abnormal conditions
 
-⚙️ System Architecture
-The system works as follows:
-Sensors collect environmental data (temperature, humidity, soil moisture)
-ESP32 processes the data
-Based on threshold values:
-Fan turns ON/OFF
-Water pump activates/deactivates
-Data is displayed on LCD
-Data is sent to cloud (MQTT) for remote monitoring
+---
 
-🔄 Workflow
-Read sensor data
-Validate data
-Compare with threshold values
-Trigger actuators (fan/pump)
-Display on LCD
-Send data to dashboard
-Repeat continuously
+## Hardware Components
+- ESP32 Microcontroller
+- DHT22 Temperature and Humidity Sensor
+- Soil Moisture Sensor
+- Relay Module
+- Water Pump
+- Fan
+- LCD Display (I2C)
+- Breadboard and jumper wires
+- Power supply
 
-🧪 Testing & Results
-Temperature and humidity monitoring
-Soil moisture detection
-Automatic fan control
-Automatic irrigation system
-LCD real-time display
-MQTT data transmission
+---
 
-📊 Output Examples
-Real-time temperature & humidity display
-Soil moisture readings
-Automatic fan activation at ≥ 24°C
-Automatic pump activation when soil is dry
-Live data on Node-RED dashboard
+## Software and Technologies
+- MicroPython for ESP32
+- Thonny IDE
+- MQTT Protocol
+- Node-RED Dashboard
+- Serial Monitor for debugging
 
-🔮 Future Improvements
-📱 Mobile app integration
-☀️ Solar power support
-🌿 Additional sensors (CO₂, pH, Light)
-📈 Data analytics & history tracking
-🔐 Secure remote access (authentication)
-🧠 Smart AI-based decision making
+---
 
-📚 Learning Outcomes
-IoT system design and implementation
-Sensor integration with ESP32
-Automation using relay modules
-Real-time data monitoring
-MQTT and cloud communication
-Debugging and testing embedded systems
+## System Architecture
+1. Sensors collect environmental data
+2. ESP32 processes sensor readings
+3. Threshold-based control logic is applied
+   - Fan activates based on temperature
+   - Pump activates based on soil moisture level
+4. Data is displayed on LCD
+5. Data is sent to MQTT broker
+6. Node-RED visualizes real-time data
 
-👩‍💻 Author
+---
+
+## Workflow
+Sensor reading → Data processing → Threshold comparison → Actuator control → LCD display → MQTT transmission → Continuous loop
+
+---
+
+## Outputs
+- Real-time environmental monitoring
+- Automatic irrigation system
+- Smart fan control
+- Live dashboard on Node-RED
+- Continuous sensor data updates
+
+---
+
+## Future Improvements
+- Mobile application integration
+- Solar power support
+- Additional sensors such as CO2, pH, and light
+- Data analytics and historical tracking
+- Secure authentication for remote access
+- AI-based decision making for smart farming
+
+---
+
+## Author
 Darshana Bhandari
-This project is for educational purposes.
+
+This project is developed for educational purposes in IoT and embedded systems.
